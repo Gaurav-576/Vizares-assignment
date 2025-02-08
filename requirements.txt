@@ -1,0 +1,7 @@
+python-dotenv
+streamlit
+transformers
+torch
+requests
+datetime
+python-dotenv
