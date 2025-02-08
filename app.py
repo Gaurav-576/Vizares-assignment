@@ -4,7 +4,6 @@ import streamlit as st
 from dotenv import load_dotenv
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from datetime import datetime
-
 load_dotenv()
 
 class ChatBot:
@@ -12,7 +11,8 @@ class ChatBot:
         self.tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
         self.model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
         self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.weather_api_key = os.getenv("WEATHER_API_KEY")
+        # self.weather_api_key = os.getenv("WEATHER_API_KEY")
+        self.weather_api_key = st.secrets["WEATHER"]["WEATHER_API_KEY"]
 
     def get_response(self, user_input):
         if "weather" in user_input.lower() or "temperature" in user_input.lower():
