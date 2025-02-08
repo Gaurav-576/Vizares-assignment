@@ -54,6 +54,7 @@ Interact with the chatbot for weather updates, time, and natural language conver
 ```plaintext
 Conversational-Bot/
 ├── app.py                    # Main chatbot application
+├── dialoGPT_chatbot.py       # Comand line based chatbot whhich can be run locally on your terminal
 ├── requirements.txt          # Python dependencies
 ├── .streamlit/secrets.toml   # Secure API key storage
 ├── README.md                 # Project documentation
