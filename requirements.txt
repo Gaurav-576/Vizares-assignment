@@ -1,7 +1,5 @@
-python-dotenv
-streamlit
-transformers
 torch
+transformers
+streamlit
 requests
 datetime
-python-dotenv
