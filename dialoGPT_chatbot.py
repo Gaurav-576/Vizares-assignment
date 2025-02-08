@@ -11,7 +11,8 @@ model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
 tokenizer.pad_token = tokenizer.eos_token
 
 load_dotenv()
-API_KEY = os.getenv("WEATHER_API_KEY")
+# API_KEY = os.getenv("WEATHER_API_KEY")
+API_KEY="4dfde606391d0262b14b00f20aba4789" # providing api_key for testing the working of the chatbot
 
 class ChatBot:
     def __init__(self):
